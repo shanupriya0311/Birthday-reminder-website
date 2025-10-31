@@ -36,9 +36,3 @@ This app was built to demonstrate **Spring Boot full-stack development**, databa
 
 ---
 
-## ⚙️ Project Setup
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/shanupriya0311/Birthday-reminder-website.git
-cd Birthday-reminder-website
