@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes moveBg {
+      0% {
+        background-position: 0% 0%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .animated-bg {
+      animation: moveBg 30s ease-in-out infinite;
+      background-size: 150%;
+    }
+  </style>
+</head>
+<body class="m-0 p-0">
+    <div class="animated-bg bg-[url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1400&q=80')] 
+              bg-no-repeat bg-cover bg-center
+              h-screen w-full 
+              flex flex-col justify-start items-center 
+              relative">
+              <div class="absolute top-0 left-0 m-4 text-white text-3xl font-bold z-50"><a th:href="@{/login_signup}">◀</a>
+  </div>
+    <div class="bg-black bg-opacity-50 p-3 rounded-xl shadow-lg mt-10">
+      <h5 class="text-2xl md:text-4xl lg:text-5xl font-bold italic text-white  text-center">
+      Signup
+      </h5>
+    </div>
+    <div>
+         <div class="bg-black bg-opacity-60 text-white p-10 rounded-2xl shadow-lg mt-20 flex flex-col items-center space-y-8 w-[500px] h-[500px]">
+     <form th:action="@{/signup}" th:object="${user}" method="post"> 
+  <h2 class="text-white text-lg italic pr-5 pb-3">Name :</h2>
+  <input 
+    type="text" 
+     id="name" 
+    placeholder="Enter the Name" 
+    class="w-[400px] h-[50px] rounded-xl text-black"
+    th:field="*{name}" required
+  >    
+  <h2 class="text-white text-lg italic pr-5 pb-3">Email :</h2>
+  <input 
+    type="email" 
+    id="email" 
+    placeholder="Enter the Email" 
+    class="w-[400px] h-[50px] rounded-xl text-black"
+     th:field="*{email}"  required
+  >
+  <h2 class="text-white text-lg italic pr-5 pb-3 pt-3">Password :</h2>
+  <input 
+    type="password" 
+    id="password" 
+    placeholder="Enter the Password" 
+    class="w-[400px] h-[50px] rounded-xl text-black"
+    th:field="*{password}" required
+  >
+  <h2 class="text-white text-lg italic pr-5 pb-3">Mobile :</h2>
+  <input 
+    type="tel" 
+    id="mobile" 
+    placeholder="Enter the Number" 
+    class="w-[400px] h-[50px] rounded-xl text-black"
+    th:field="*{mobile}" 
+    pattern="[0-9]{10}" required
+  >    
+  <div class="p-4 text-center">
+  <input 
+  type="submit" 
+  value="Submit" 
+  class="rounded-xl italic bg-blue-500 text-white px-4 py-2 ml-2 transform transition hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:bg-indigo-500" 
+/>
+</div>
+</form>
+    </div>
+</body>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>login_signu page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes moveBg {
+      0% {
+        background-position: 0% 0%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .animated-bg {
+      animation: moveBg 30s ease-in-out infinite;
+      background-size: 150%;
+    }
+  </style>
+</head>
+<body class="m-0 p-0">
+
+  <div class="animated-bg bg-[url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1400&q=80')] 
+              bg-no-repeat bg-cover bg-center
+              h-screen w-full 
+              flex flex-col justify-start items-center 
+              relative">
+
+    <div class="bg-black bg-opacity-50 p-6 rounded-xl shadow-lg mt-10">
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold italic text-white animate-pulse text-center">
+        Birthday Reminder!
+      </h1>
+    </div>
+    <div class="bg-black bg-opacity-60 text-white p-10 rounded-2xl shadow-lg mt-20 flex flex-col items-center space-y-8 w-[500px] h-[300px]">
+      <button class="bg-white font-bold italic text-black text-xl px-20 py-5 rounded-md hover:bg-blue-500 hover:text-white transition duration-300">
+      <a th:href="@{/login}">
+Login</a> 
+      </button>
+      <button class="bg-white font-bold italic text-black text-xl px-20 py-5 rounded-md hover:bg-blue-500 hover:text-white transition duration-300">
+      <a th:href="@{/signup}">
+Signup</a>
+      </button>
+    </div>
+
+  </div>
+
+</body>
+</html>
