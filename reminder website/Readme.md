@@ -1,6 +1,7 @@
 🎂 Birthday Reminder Application
 > *Never miss a birthday again.*
 A secure, full-stack web application built with Spring Boot, Spring Data JPA, and MySQL that enables users to register, authenticate, and manage personal birthday records through a clean, scalable MVC-architected system.
+<br>
 ![Java](https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=java&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5.0-brightgreen?style=for-the-badge&logo=springboot&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?style=for-the-badge&logo=mysql&logoColor=white)
