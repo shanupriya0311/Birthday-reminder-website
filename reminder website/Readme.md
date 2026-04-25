@@ -130,7 +130,7 @@ http://localhost:8080
 
 ---
 
-## 🖼️ Screenshots
+## 🖼️ Interface review
 
 ### 🏠 Home Page
 ![Home Page](https://github.com/user-attachments/assets/1c126ba6-76c4-4e7a-9d0b-37c91c0fac76)
