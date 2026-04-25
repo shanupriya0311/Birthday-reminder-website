@@ -178,11 +178,6 @@ http://localhost:8080
 **Shanupriya T**
 🎓 B.E. Computer Science — Karpagam College of Engineering, Anna University
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](#)
-[![LeetCode](https://img.shields.io/badge/LeetCode-400+_Problems-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](#)
-
----
 
 <div align="center">
 
